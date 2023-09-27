@@ -1,0 +1,31 @@
+body {
+    font-family:"Moli";
+    font-size: 18pt;
+    background-color: #FAE56E;
+    color: #AD8266;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:"Acme";
+    font-size:50pt;
+}
+
+header {
+    text-align: center;
+}
+
+#hero,footer {
+    color: #AD8266;
+    border: 2px solid #AD8266;
+    background-color: #AD9E44;
+    text-align: center;
+    padding: 20px;
+}
+
+#hero img {
+    width: 400px;
+}
+
+#bio {
+    text-align: center;
+}
