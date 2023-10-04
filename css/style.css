@@ -23,15 +23,72 @@ header {
     text-align: center;
     padding: 20px;
 }
+/*hero section*/
 
 #hero img {
     width: 400px;
 }
 
+/*bio section*/
+
 #bio {
     text-align: center;
 }
 
+/* hobbies */
+
 #hobbies ul li:nth-child(even) {
-    color:rgb(174, 255, 0);
+    color:black;
+}
+#hobbies ul li:nth-child(odd) {
+    color:orangered;
+}
+/* Gallery */
+#gallery {
+    border: 20px double #AD8266;
+}
+
+#gallery img {
+    max-width:100%;
+
+}
+
+#gallery figure {
+    text-align:center;
+    border: 10px solid #AD8266; 
+}
+
+/* Literature */
+#lit {
+    border: 7px dotted #AD8266;
+    margin-bottom: 2rem;
+
+}
+
+#lit div {
+    padding: 2rem;
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+#lit div p {
+    padding: 0.3rem 0;
+}
+
+/*Dropcaps*/
+
+#lit div p:first-child:first-letter {
+    color:black;
+    float: left;
+    font-size: 3em;
+    padding: .25em;
+    margin-right:.25em;
+    line-height: .65;
+    border: 4px solid black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular';
+    text-shadow: 5px 3px 3px #AD8266;
+    box-shadow:6px 5px 5px #AD8266;
+    border-top-left-radius: .2em;
+
+
 }
