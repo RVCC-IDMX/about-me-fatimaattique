@@ -143,3 +143,6 @@ header {
         display: block;
     }
 }
+#video {
+    text-align: center;
+}
