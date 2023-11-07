@@ -145,4 +145,11 @@ header {
 }
 #video {
     text-align: center;
+    
+}
+
+/* Contact Form */
+
+#formElements {
+    display: grid;
 }

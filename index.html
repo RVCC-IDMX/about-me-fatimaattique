@@ -115,6 +115,74 @@
         My friends and I went to a new coffee shop. 
     </p>
 </section>
+
+<section id="contact">
+    
+    <h2>Contact Us:</h2>
+
+    <form id="contactForm" name="contactForm" method="post" data-netlify="true">
+
+        <fieldset>
+            <legend>Contact Form</legend>
+
+            <div id="formElements">
+
+            <!-- Name -->
+            <lable for="name">Name (required)</lable>
+            <input type="text" id="name" name="name" required>
+
+            <!-- Email -->
+            <lable for="email">Email (required)</lable>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Phone -->
+            <lable for="phone">Phone (optional)</lable>
+            <input type="tel" id="phone" name="phone">
+
+            <!-- Phone Type -->
+            <label for="phonetype">Phone Type (optional)</label>
+            <select id="phonetype" name="phonetype">
+                <option value="" selected>Select Phone Type</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Work">Work</option>
+                <option value="Home">Home</option>
+        
+            </select>
+
+            <!-- Message -->
+            <label for="message">Your Comment (optional)</label>
+            <textarea id="message" name="message" rows="8 " placeholder="type."></textarea>
+
+            <!-- Reply -->
+            <fieldset>
+                <legend>Would you like a reply?</legend> 
+
+                <ul>
+                    <li>
+                        <input type="radio" id="message-yes" name="reply" value="yes, a reply please.">
+                        <label for="message-yes">Yes, a reply would be nice.</label> 
+                    </li>
+
+                    <li>
+                        <input type="radio" id="message-no" name="reply" value="no reply please" checked>
+                        <label for="message-no"> No, thanks.</label> 
+                    </li>
+                </ul>
+
+
+            </fieldset>
+
+            <!-- Submit -->
+            <button type="submit">Send</button> 
+
+        </div>
+
+        </fieldset>
+    </form>
+
+
+
+</section>
     
 </main>
 
