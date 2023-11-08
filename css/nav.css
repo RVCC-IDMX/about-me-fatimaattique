@@ -30,13 +30,25 @@ main {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    margin-bottom: 1rem;
-    
+    margin-bottom: 1rem; 
 }
 
-
-
 /* logo */
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.logo img {
+    height: 7vw;
+    width: 7vw;
+}
+.logo h1 {
+    font-size: 1.5em;
+}
 
 
 
