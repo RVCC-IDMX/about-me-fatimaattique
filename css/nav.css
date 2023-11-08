@@ -73,6 +73,13 @@ main {
     display: inline-block;
 }
 
+.navbar-link a:hover,
+.navbar-link a:focus {
+    filter: invert(1);
+    border-radius: 10px;
+    outline: none;
+}
+
 
 
 
