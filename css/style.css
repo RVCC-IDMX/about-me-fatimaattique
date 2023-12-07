@@ -5,6 +5,36 @@ body {
     color:#825d45;
 }
 
+.logo-container {
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Pacifico', cursive; 
+    font-size: 72px;
+    font-weight: bold;
+    color: #FAE56E; 
+    text-shadow: 5px 5px 5px #825d45;
+    border-top: .9em;
+    animation: bounce 1s infinite alternate; 
+    margin-bottom: 0;
+}
+
+.logo span {
+    font-size: 80px;
+    color: #FAE56E; 
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     font-family:"Acme";
     text-align:center;
@@ -12,6 +42,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 h1 {
     font-size: 40pt;
+    text-align: left;
+    margin-top: .6em;
+    margin-right: 6em;
+    text-align: center;
 }
 header {
     text-align: center;
@@ -35,20 +69,41 @@ header {
 #bio {
     text-align: center;
 }
+  
 
 /* hobbies */
 #hobbies {
+    background-color: #FAE56E;
+    padding: 20px;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
-#hobbies ul li:nth-child(even) {
-    color: #b27752;
+#hobbies ul {
+    list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-#hobbies ul li:nth-child(odd) {
-    color:#5f98e2;
+#hobbies li {
+    font-size: 30px;
+  margin: 0 15px 15px 15px;
+  width: 150px; /* Set a fixed width for better alignment */
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #AD8266; /* Add a subtle border for separation */
+  border-radius: 8px;
+  transition: background-color 0.3s ease; /* Add transition for a smooth hover effect */
 }
+#hobbies li:hover {
+    background-color: #9abbf1;
+    color: #6d3f21; /* Change text color on hover for better contrast */
+    cursor: pointer;
+  }
 /* Gallery */
 #gallery {
     border: 20px double #AD8266;
@@ -143,6 +198,128 @@ header {
         display: block;
     }
 }
+#blog article 
+
+/* Add this to the existing styles.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #825d45;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  
+  header {
+    background-color: #825d45;
+    color: #fae56e;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #e4d476;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2, h3 {
+    color: #825d45;
+  }
+  
+  p {
+    color: #825d45;
+  }
+  
+  ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  pre {
+    background-color: #f4f4f4;
+    padding: 10px;
+    overflow-x: auto;
+    border-radius: 8px;
+  }
+  
+  code {
+    font-family: 'Courier New', monospace;
+  }
+  
+  .hover-example {
+    position: relative;
+    max-width: 400px;
+    overflow: hidden;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: center;
+  }
+  
+  
+  /* Styling for the image and hover effect */
+  @keyframes slide {
+    0% {
+      left: 0;
+      top: 0;
+    }
+    50% {
+      left: 244px;
+      top: 100px;
+    }
+    100% {
+      left: 488px;
+      top: 0;
+    }
+  }
+  .stage {
+    background: #eaeaed;
+    border-radius: 6px;
+    height: 150px;
+    position: relative;
+    min-width: 538px;
+  }
+  .stage:hover .ball {
+    animation: slide 2s ease-in-out .5s infinite alternate;
+  }
+  .stage:active .ball {
+    animation-play-state: paused;
+  }
+  .ball {
+    background: #2db34a;
+    border-radius: 50%;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+  }
+  
+  
+  
+  #resources {
+    background-color: #fae56e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  #resources h2 {
+    color: #825d45;
+  }
+  
+  #resources a {
+    color: #e74c3c;
+  }
+  
+  #resources a:hover {
+    text-decoration: underline;
+  }
+  
+      
 #video {
     text-align: center;
     
@@ -202,3 +379,4 @@ legend {
 #contact button:hover {
     background-color: #3067b9;
 }
+

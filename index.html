@@ -11,18 +11,46 @@
     <link href="css/nav.css"rel="stylesheet"/>
 </head>
 <body>
+    <!--
+    <nav class="nav">
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+        <label for="nav__checkbox" class="nav__toggle">
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+          </svg>
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+          </svg>
+        </label>
+        <ul class="nav__menu">
+            <li><a href="#bio"> Bio</a></li>
+            <li><a href="#gallery"> Gallery</a></li>
+            <li><a href="#lit"> Blog</a></li>
+            <li><a href="#contact"> Contact Me</a></li>   
+        </ul>
+    </nav>
+-->
 
    <!--The body is the component that holds all the content displayed to a visitor.-->
 
    <header>
 <!--the HEADER shows the logo and page title.-->
 <nav class="navbar">
-    <div class="logo">
-        <img src="img/logo-96X96.svg" alt="blue bird logo">
-<h1>About Me</h1>
-    </div>
-    <div class="navbar-link"> 
-        <ul>
+        <div class="logo-container">
+            <div class="logo">F<span>A</span></div>
+        </div> 
+        <h1>About Me</h1>
+    <div class="navbar-link nav"> 
+        <input type="checkbox" id="nav__checkbox" class="nav__checkbox">
+        <label for="nav__checkbox" class="nav__toggle">
+          <svg class="menu" viewBox="0 0 448 512" width="100" title="bars">
+            <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z" />
+          </svg>
+          <svg class="close" viewBox="0 0 384 512" width="100" title="times">
+            <path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+          </svg>
+        </label>
+        <ul class="nav__menu">
             <li><a href="#bio"> Bio</a></li>
             <li><a href="#gallery"> Gallery</a></li>
             <li><a href="#lit"> Blog</a></li>
@@ -49,8 +77,13 @@
         <h2>Biography:</h2>
 
         <div>
-            <p>I want to be an IT manager.</p>
-            <p>I love to sleep.</p>
+            <p>Hello, I've been in the U.S. for five years. Learning English and adapting to a new culture was tough, but now I'm about to finish my Associate's in Information and Systems Technology at RVCC. Next, I plan to transfer to either Rutgers or Kean University.
+
+                My goal? I want to dive into Information Technology Management, making a difference in how organizations use tech. Plus, I'm keen on cybersecurity, aiming to play a role in keeping digital spaces safe.
+                
+                It's been a journey of growth, and I'm excited about what the future holds. As I wrap up at RVCC, I look forward to taking my skills into the real world and continuing my education at a new university. Let's see where this IT adventure takes me! 
+                </p>
+            
         </div>
     </section>
 
@@ -117,6 +150,54 @@
 
 
     </article>
+    <section id="blog article">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Mastering CSS Animation</title>
+            <link rel="stylesheet" href="styles.css">
+          </head>
+          
+          <body>
+          
+            <header>
+              <h1>CSS Animation: Bringing Websites to Life</h1>
+            </header>
+          
+            <article>
+              <h2>Understanding CSS Animation</h2>
+          
+              <p>CSS animation allows developers to bring elements on a webpage to life by smoothly transitioning between different styles. This adds a layer of interactivity and visual appeal, enhancing the overall user experience. Let's explore some key aspects of CSS animation.</p>
+          
+              <h3>Key Concepts:</h3>
+          
+              <ol>
+                <li>
+                  <strong>@keyframes Rule:</strong>
+                  At the core of CSS animation is the <code>@keyframes</code> rule, which allows developers to define animations using a set of keyframes. Each keyframe specifies the style at a particular point in the animation.
+                </li>
+          
+                <li>
+                  <strong>Animation Properties:</strong>
+                  <ul>
+                    <li><code>animation-name</code>: Specifies the name of the <code>@keyframes</code> rule.</li>
+                    <li><code>animation-duration</code>: Defines the duration of the animation.</li>
+                    <li><code>animation-timing-function</code>: Sets the pace of the animation (e.g., ease-in, ease-out).</li>
+                    <li><code>animation-iteration-count</code>: Determines how many times the animation should repeat.</li>
+                  </ul>
+                </li>
+              </ol>
+          
+              <!-- Inside the article section -->
+                <h3>Visual Example: Hover Effect on Image</h3>
+                <figure class="hover-example">
+                <div class="stage">
+                    <figure class="ball"></figure>
+                </div>
+  
+            </article>
+          </body>
+    </section>
 <section id="video"> 
 
     <h2>My Video</h2>
